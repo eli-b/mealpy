@@ -136,7 +136,7 @@ numpy vector (the solution) and output is the single objective value or list of 
 	## This is how you design Constrained Benchmark Function (G01)
 	#### Link: https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781119136507.app2
 	def fitness_constrained(solution):
-		def g1(x):
+	    def g1(x):
 	        return 2 * x[0] + 2 * x[1] + x[9] + x[10] - 10
 	    def g2(x):
 	        return 2 * x[0] + 2 * x[2] + x[9] + x[10] - 10
